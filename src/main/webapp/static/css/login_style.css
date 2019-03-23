@@ -1,0 +1,186 @@
+/* 
+    Created on : 1/03/2019, 10:15:33 AM
+    Author     : Emmanuel Fonseca
+*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,700,700i');
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    overflow: hidden
+}
+.body-login{
+    width: 100vw;
+    height: 100vh;
+    background-color: hsla(0,0%,93%,1);
+}
+.login-card {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 20vw;
+    max-height: 38vh;
+    padding: 1em;
+    background-color: hsla(0, 0%, 100%, 1);
+    border-radius: .725em;
+    text-align: center;
+    display: flex;
+    color: hsla(200, 31%, 14%, 1);
+    font-size: 16px;
+    letter-spacing: .25px;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+}
+input[type='text'], input[type='password'] {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: .1px;
+    line-height: 1.5;
+    border-radius: .275em;
+    vertical-align: middle;
+    width: 100%;
+    margin: 1em 0 1em 0;
+    padding: .5em 0 .5em 1em;
+    border: thin solid #dadce0;
+    outline: none;
+    -webkit-transition: box-shadow 0.30s ease-in-out;
+    -moz-transition: box-shadow 0.30s ease-in-out;
+    -ms-transition: box-shadow 0.30s ease-in-out;
+    -o-transition: box-shadow 0.30s ease-in-out;
+}
+input[type=text]:focus, input[type=password]:focus, textarea:focus {
+    /*box-shadow: 0 0 5px rgba(81, 203, 238, 1);*/
+}
+input[type='submit'] {
+    float: right;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: hsla(190, 55.7%, 41.6%, 1);
+    letter-spacing: .1px;
+    line-height: 1.5;
+    border-radius: .275em;
+    vertical-align: middle;
+    width: 50%;
+    margin: 1em 0 1em 0;
+    padding: .5em 0 .5em 0;
+    border: none;
+    outline: none;
+    color: hsla(0, 0%, 100%, 1);
+    -webkit-transition: box-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out;
+    -moz-transition: box-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out;
+    -ms-transition: box-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out;
+    -o-transition: box-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out;
+}
+input[type='submit']:hover {
+    background-color: hsla(190, 55.7%, 41.6%, .75);
+}
+
+.footer {
+    position: absolute;
+    margin: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 50vh;
+}
+
+/* PLACEHOLDER*/
+input[type=text]::-webkit-input-placeholder, input[type=password]::-webkit-input-placeholder { /* Edge */
+    color: hsla(0, 0%, 70%, 1);
+    -webkit-transition: box-shadow 0.15s ease-in-out;
+    -moz-transition: box-shadow 0.15s ease-in-out;
+    -ms-transition: box-shadow 0.15s ease-in-out;
+    -o-transition: box-shadow 0.15s ease-in-out;
+}
+
+input[type=text]:-ms-input-placeholder, input[type=password]:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: hsla(0, 0%, 70%, 1);
+    -webkit-transition: color 0.15s ease-in-out;
+    -moz-transition: color 0.15s ease-in-out;
+    -ms-transition: color 0.15s ease-in-out;
+    -o-transition: color 0.15s ease-in-out;
+}
+
+input[type=text]::placeholder, input[type=password]::placeholder {
+    color: hsla(0, 0%, 70%, 1);
+    -webkit-transition: color 0.15s ease-in-out;
+    -moz-transition: color 0.15s ease-in-out;
+    -ms-transition: color 0.15s ease-in-out;
+    -o-transition: color 0.15s ease-in-out;
+}
+
+
+/* PLACEHOLDER FOCUS */
+input[type=text]:focus::-webkit-input-placeholder, input[type=password]:focus::-webkit-input-placeholder { /* Edge */
+    color: hsla(0, 0%, 100%, 1);
+}
+
+input[type=text]:focus:-ms-input-placeholder, input[type=password]:focus:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: hsla(0, 0%, 100%, 1);
+}
+
+input[type=text]:focus::placeholder, input[type=password]:focus::placeholder {
+    color: hsla(0, 0%, 100%, 1);
+}
+a {
+    text-decoration: none;
+    line-height: 2;
+    color: #0f6ecd;
+}
+
+.inactive {
+    display: none;
+}
+
+.nav_buttons {
+    width: 32px;
+    cursor: pointer;
+}
+.recoverPass {
+    font-size: 16px;
+    font-weight: 400;
+    background-color: hsla(190, 55.7%, 41.6%, 1);
+    letter-spacing: .1px;
+    line-height: 1.5;
+    border-radius: .275em;
+    vertical-align: middle;
+    width: 40%;
+    margin: 1em 0 1em 1em;
+    padding: .5em 0 .5em 0;
+    border: none;
+    outline: none;
+    color: hsla(0, 0%, 100%, 1);
+    -webkit-transition: box-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out;
+    -moz-transition: box-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out;
+    -ms-transition: box-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out;
+    -o-transition: box-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out;
+}
+.default_button {
+    font-size: 16px;
+    font-weight: 400;
+    background-color: hsla(0, 0%, 100%, 1);
+    letter-spacing: .1px;
+    line-height: 1.5;
+    border-radius: .275em;
+    vertical-align: middle;
+    width: 45%;
+    margin: 1em 1em 1em 0;
+    padding: .5em 1em .5em 1em;
+    border: none;
+    outline: none;
+    color: hsla(0, 0%, 70%, 1);
+    -webkit-transition: box-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out;
+    -moz-transition: box-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out;
+    -ms-transition: box-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out;
+    -o-transition: box-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out;
+}
+.default_button:hover {
+    background-color: hsla(0, 0%, 93%, 1);
+}
